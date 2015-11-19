@@ -1,5 +1,6 @@
-<h1>Emstagram</h1>
-<%= link_to "Post a photo", '/posts/new' %>
+<% if current_user %>
+  <b><%= link_to "Post a photo", '/posts/new' %></b>
+<% end %>
 </br></br>
 <% if @posts.any? %>
   <% @posts.reverse.each do |post| %>
