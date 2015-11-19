@@ -1,5 +1,5 @@
 <%= form_for @post, html: {multipart: true} do |f| %>
   <%= f.file_field :image, required: 'Image required' %>
-  <%= f.text_field :description %>
-  <%= f.submit %>
+  <%= f.text_field :description, :placeholder => "Add a caption" %>
+  <%= f.submit "Post" %>
 <% end %>
