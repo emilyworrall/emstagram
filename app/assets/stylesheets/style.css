@@ -5,3 +5,17 @@ body {
 p, div {
   font-family: Noto Sans;
 }
+
+#home {
+  position: relative;
+  left: 50%;
+}
+
+.link:hover {
+  text-decoration: none;
+}
+
+.central {
+  position: relative;
+  text-align: center;
+}

@@ -13,9 +13,9 @@
 <% end %>
 
 <% if user_signed_in? %>
-  <%= link_to "Add comment", new_post_comment_path(@post) %>
+  <%= link_to "Add comment", new_post_comment_path(@post), class:"link" %>
 <% else %>
-  <%= link_to "Sign in", new_user_session_path %> to add a comment
+  <%= link_to "Sign in", new_user_session_path, class:"link" %> to add a comment
 <% end %>
 
-<%= link_to "Home", "/posts" %>
+<div id="home"><%= link_to "Home", "/posts", class:"link"%></div>

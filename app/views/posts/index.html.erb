@@ -1,19 +1,24 @@
 <% if current_user %>
-  <b><%= link_to "Post a photo", '/posts/new' %></b>
+  <b><%= link_to "Post a photo", '/posts/new', class:"link"%></b>
 <% end %>
 </br></br>
-<% if @posts.any? %>
-  <% @posts.reverse.each do |post| %>
-    <%= link_to image_tag(post.image.url(:thumb)), post_path(post) %>
-    </br></br>
-    <%= post.description %>
-    <% if current_user %>
-      <% if (post.user_id == current_user.id) %>
-        <%= link_to "Delete post", post_path(post), method: :delete %>
+<div class="central">
+  <% if @posts.any? %>
+    <% @posts.reverse.each do |post| %>
+      <%= current_user.email %>
+      </br></br>
+      <%= link_to image_tag(post.image.url(:medium)), post_path(post) %>
+      </br></br>
+      <%= post.description %>
+      </br></br>
+      <% if current_user %>
+        <% if (post.user_id == current_user.id) %>
+          <%= link_to "Delete post", post_path(post), method: :delete, class:"link" %>
+        <% end %>
       <% end %>
+    </br></br>
     <% end %>
-  </br></br>
+  <% else %>
+    No photos posted
   <% end %>
-<% else %>
-  No photos posted
-<% end %>
+</div>
