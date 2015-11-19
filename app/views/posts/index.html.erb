@@ -2,10 +2,10 @@
 <%= link_to "Post a photo", '/posts/new' %>
 </br></br>
 <% if @posts.any? %>
-  <% @posts.each do |post| %>
+  <% @posts.reverse.each do |post| %>
     <%= link_to image_tag(post.image.url(:thumb)), post_path(post) %>
     <h2><%= post.description %></h2>
   <% end %>
 <% else %>
-  <h1>No photos posted</h1>
+  No photos posted
 <% end %>
