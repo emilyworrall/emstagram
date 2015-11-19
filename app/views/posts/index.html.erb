@@ -4,7 +4,14 @@
 <% if @posts.any? %>
   <% @posts.reverse.each do |post| %>
     <%= link_to image_tag(post.image.url(:thumb)), post_path(post) %>
-    <h2><%= post.description %></h2>
+    </br></br>
+    <%= post.description %>
+    <% if current_user %>
+      <% if (post.user_id == current_user.id) %>
+        <%= link_to "Delete post", post_path(post), method: :delete %>
+      <% end %>
+    <% end %>
+  </br></br>
   <% end %>
 <% else %>
   No photos posted
