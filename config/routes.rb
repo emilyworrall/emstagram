@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
 
-  get 'photos' => 'photos#index'
-  resources :photos
+  root 'posts#index'
+  get 'posts' => 'posts#index'
+  resources :posts
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

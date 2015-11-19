@@ -1,11 +1,11 @@
 require 'rails_helper'
 
-feature 'photos' do
-  context 'no photos have been added' do
+feature 'posts' do
+  context 'no photos have been posted' do
     scenario 'should display a prompt to add a photo' do
-      visit '/photos'
-      expect(page).to have_content 'No photos added'
-      expect(page).to have_content 'Add a photo'
+      visit '/posts'
+      expect(page).to have_content 'No photos posted'
+      expect(page).to have_content 'Post a photo'
     end
   end
 end
