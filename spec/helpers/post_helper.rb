@@ -11,7 +11,7 @@ module Helpers
     visit '/'
     click_link 'Post a photo'
     fill_in 'Add a caption', with: '#testing'
-    page.attach_file(image, Rails.root + 'spec/fixtures/images/example.png')
+    page.attach_file('image', Rails.root + 'spec/fixtures/images/example.png')
     click_button 'Post'
   end
 end

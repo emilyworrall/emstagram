@@ -4,23 +4,26 @@
   Please sign in to post a photo
 <% end %>
 </br></br>
-<div class="central">
-  <% if @posts.any? %>
-    <% @posts.reverse.each do |post| %>
-      <%= link_to image_tag(post.image.url(:medium)), post_path(post), id: post.id %>
-      </br></br>
-      <%= post.description %>
-      <%= link_to "Like", post_likes_path(post), class:"likes-link" %>
-      <span class="likes_count"> <%= post.likes.count %> </span> <%= 'like'.pluralize post.likes.count %>
-      </br></br>
-      <% if current_user %>
-        <% if (post.user_id == current_user.id) %>
-          <%= link_to "Delete post", post_path(post), method: :delete, class:"link" %>
+<div class="post-box">
+  <div class="central">
+    <% if @posts.any? %>
+      <% @posts.reverse.each do |post| %>
+        <%= link_to image_tag(post.image.url(:medium)), post_path(post), id: post.id %>
+        </br></br>
+        <%= post.description %>
+        </br></br>
+        <%= link_to "Like", post_likes_path(post), class:"likes-link" %>
+        <span class="likes_count"> <%= post.likes.count %> </span> <%= 'like'.pluralize post.likes.count %>
+        </br></br>
+        <% if current_user %>
+          <% if (post.user_id == current_user.id) %>
+            <%= link_to "Delete post", post_path(post), method: :delete, class:"link" %>
+          <% end %>
         <% end %>
+      </br></br>
       <% end %>
-    </br></br>
+    <% else %>
+      No photos posted
     <% end %>
-  <% else %>
-    No photos posted
-  <% end %>
+  </div>
 </div>

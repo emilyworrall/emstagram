@@ -13,7 +13,6 @@ class PostsController < ApplicationController
     @post = Post.create(post_params)
     if @post.save
       @post.user_id = current_user.id
-      # @post.email = current_user.email
       @post.save
       redirect_to '/posts'
     else

@@ -16,6 +16,34 @@ p, div {
 }
 
 .central {
+  text-align: center;
+  left: 50%;
+}
+
+.description {
   position: relative;
+  margin-left: 50px;
+}
+
+.post-box {
+  position: relative;
+  width: 500px;
+  padding: 47px;
+  border: 1px solid #9d9d9d;
+  left: 89px;
+  border-radius: 5px;
+}
+
+a.navbar-brand {
+  font-family: Lobster Two;
+  font-size: 29px;
+}
+
+#navbar-container.container {
+  width: 700px;
+}
+
+#main-container.container.container.container {
+  width: 700px;
   text-align: center;
 }

@@ -1,21 +1,24 @@
-<p><%= image_tag @post.image.url(:thumb) %></p>
-<p><%= @post.description %></p>
-<% if @post.comments.any? %>
-  <ul>
-    <% @post.comments.each do |comment| %>
-      <li>
-        <%= comment.thoughts %>
-      </li>
+<div class="post-box">
+  <div class="central">
+    <p><%= image_tag @post.image.url(:medium) %></p>
+    <p id="description"><%= @post.description %></p>
+    <% if @post.comments.any? %>
+      <ul>
+        <% @post.comments.each do |comment| %>
+          <ol id="comments">
+            <%= comment.thoughts %>
+          </ol>
+        <% end %>
+      </ul>
+    <% else %>
+      No comments yet
     <% end %>
-  </ul>
-<% else %>
-  No comments yet
-<% end %>
 
-<% if user_signed_in? %>
-  <%= link_to "Add comment", new_post_comment_path(@post), class:"link" %>
-<% else %>
-  <%= link_to "Sign in", new_user_session_path, class:"link" %> to add a comment
-<% end %>
-
+    <% if user_signed_in? %>
+      <%= link_to "Add comment", new_post_comment_path(@post), class:"link" %>
+    <% else %>
+      <%= link_to "Sign in", new_user_session_path, class:"link" %> to add a comment
+    <% end %>
+  </div>
+</div>
 <div id="home"><%= link_to "Home", "/posts", class:"link"%></div>
