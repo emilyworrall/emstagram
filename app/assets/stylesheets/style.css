@@ -16,6 +16,10 @@ p, div {
   text-decoration: none;
 }
 
+#likes-link {
+  text-decoration: none;
+}
+
 .central {
   text-align: center;
   left: 50%;
@@ -114,4 +118,10 @@ input::-webkit-input-placeholder {
   padding: 48px;
   border-radius: 6px;
   width: 600px;
+}
+
+#delete {
+  bottom: -3.6em;
+  left: -17em;
+  position: relative;
 }

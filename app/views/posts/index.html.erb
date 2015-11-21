@@ -12,12 +12,14 @@
           </br></br>
           <span id="description"><%= post.description %></span>
           </br></br>
-          <%= link_to "Like", post_likes_path(post), class:"likes-link" %>
+          <%= link_to post_likes_path(post), class:"link", id:"likes-link" do %>
+            <span class="glyphicon glyphicon-heart"></span>
+          <% end %>
           <span class="likes_count"> <%= post.likes.count %> </span> <%= 'like'.pluralize post.likes.count %>
           </br></br>
           <% if current_user %>
             <% if (post.user_id == current_user.id) %>
-              <%= link_to "Delete post", post_path(post), method: :delete, class:"link" %>
+              <%= link_to "Delete post", post_path(post), method: :delete, class:"link", id:"delete" %>
             <% end %>
           <% end %>
         </br></br>
