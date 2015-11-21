@@ -19,11 +19,17 @@ p, div {
 .central {
   text-align: center;
   left: 50%;
+  margin-left: 39px;
 }
 
 .description {
   position: relative;
   margin-left: 50px;
+}
+
+#description {
+  font-family: Permanent Marker;
+  font-size: 26px;
 }
 
 .post-box {
@@ -38,14 +44,14 @@ p, div {
 
 a.navbar-brand {
   font-family: Lobster Two;
-  font-size: 29px;
-  width: 150px;
+  font-size: 30px;
+  width: 162px;
 }
 
 #navbar-container.container {
-  width: 700px;
-  padding-top: 10px;
-  padding-bottom: 15px;
+  width: 635px;
+  padding-top: 5px;
+  padding-bottom: 7px;
 }
 
 #main-container.container.container.container {
@@ -76,15 +82,15 @@ input::-webkit-search-cancel-button {
 input[type=search] {
   background: #ededed url(http://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
   border: solid 1px #ccc;
-  padding: 9px 10px 9px 32px;
-  width: 55px;
+  padding: 6px 10px 7px 35px;
+  width: 102px;
   -webkit-border-radius: 10em;
   -moz-border-radius: 10em;
   border-radius: 10em;
   -webkit-transition: all .5s;
   -moz-transition: all .5s;
   transition: all .5s;
-  margin-top: 5%;
+  margin-top: 6%;
 }
 
 input[type=search]:focus {
@@ -102,4 +108,10 @@ input:-moz-placeholder {
 
 input::-webkit-input-placeholder {
   color: #999;
+}
+
+#well.well-lg {
+  padding: 48px;
+  border-radius: 6px;
+  width: 600px;
 }

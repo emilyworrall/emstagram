@@ -1,6 +1,6 @@
-<div class="post-box">
+<div class="well well-lg" id="well">
   <div class="central">
-    <p><%= image_tag @post.image.url(:medium) %></p>
+    <p><%= image_tag @post.image.url(:large) %></p>
     <p id="description"><%= @post.description %></p>
     <% if @post.comments.any? %>
       <ul>
@@ -21,4 +21,3 @@
     <% end %>
   </div>
 </div>
-<div id="home"><%= link_to "Home", "/posts", class:"link"%></div>
