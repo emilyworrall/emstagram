@@ -125,3 +125,7 @@ input::-webkit-input-placeholder {
   left: -17em;
   position: relative;
 }
+
+.glyphicon:hover {
+  color: #DF01D7;
+}
