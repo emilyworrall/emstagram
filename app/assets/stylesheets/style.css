@@ -36,6 +36,15 @@ p, div {
   font-size: 26px;
 }
 
+#username {
+  font-family: Permanent Marker;
+  font-size: 23px;
+}
+
+#timestamp {
+  position: relative;
+  margin-left: 52%;
+}
 #comments {
   margin-left: -17%;
   text-align: left;
@@ -120,14 +129,14 @@ input::-webkit-input-placeholder {
 }
 
 #well.well-lg {
-  padding: 48px;
+  padding: 22px;
   border-radius: 6px;
   width: 600px;
 }
 
 #delete {
-  bottom: -3.6em;
-  left: -17em;
+  bottom: -1.2em;
+  left: -15em;
   position: relative;
 }
 

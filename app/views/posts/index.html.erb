@@ -8,6 +8,9 @@
     <% if @posts.any? %>
       <% @posts.reverse.each do |post| %>
         <div class="well well-lg" id="well">
+          <span id="username">@<%= post.user.username %></span>
+          <span id="timestamp"><%= relative_time(post.created_at) %></span>
+          </br></br>
           <%= link_to image_tag(post.image.url(:large)), post_path(post), id: post.id %>
           </br></br>
           <span id="description"><%= post.description %></span>

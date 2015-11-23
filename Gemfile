@@ -28,7 +28,7 @@ gem 'devise'
 gem 'database_cleaner'
 gem 'selenium-webdriver'
 gem 'poltergeist'
-
+gem 'time_difference'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
