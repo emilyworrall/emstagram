@@ -29,6 +29,7 @@ gem 'database_cleaner'
 gem 'selenium-webdriver'
 gem 'poltergeist'
 gem 'time_difference'
+gem 'aws-sdk'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
