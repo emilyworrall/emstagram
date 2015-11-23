@@ -39,6 +39,8 @@ p, div {
 #username {
   font-family: Permanent Marker;
   font-size: 23px;
+  float: left;
+  margin-left: 5%;
 }
 
 #comment_user {
@@ -47,8 +49,10 @@ p, div {
 }
 
 #timestamp {
+  float: right;
   position: relative;
-  margin-left: 52%;
+  margin-right: 5%;
+  padding-top: 7px;
 }
 #comments {
   margin-left: -10%;
