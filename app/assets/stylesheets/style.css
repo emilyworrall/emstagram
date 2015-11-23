@@ -165,3 +165,7 @@ input::-webkit-input-placeholder {
   text-align: center;
   margin-right: 6.2%;
 }
+
+#remember-me {
+  margin-left: 20%;
+}
