@@ -1,5 +1,5 @@
-<div class="well well-lg" id="well">
-  <div class="central">
+<div class="central">
+  <div class="well well-lg" id="well">
     <p><%= image_tag @post.image.url(:large) %></p>
     <p id="description"><%= @post.description %></p>
     <% if @post.comments.any? %>
@@ -12,6 +12,7 @@
       </ul>
     <% else %>
       No comments yet
+    </br></br>
     <% end %>
 
     <% if user_signed_in? %>

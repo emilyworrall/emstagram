@@ -36,6 +36,11 @@ p, div {
   font-size: 26px;
 }
 
+#comments {
+  margin-left: -17%;
+  text-align: left;
+}
+
 .post-box {
   background-color: #ffffff;
   position: relative;
@@ -128,4 +133,35 @@ input::-webkit-input-placeholder {
 
 .glyphicon:hover {
   color: #DF01D7;
+}
+
+.sign-up {
+  position: relative;
+  text-align: left;
+  margin-left: 6%;
+}
+
+#user_username {
+  position: relative;
+  margin-left: 15%;
+}
+
+#user_email {
+  position: relative;
+  margin-left: 20.1%;
+}
+
+#user_password {
+  position: relative;
+  margin-left: 15.7%;
+}
+
+#user_password_confirmation {
+  position: relative;
+  margin-left: 1.6%;
+}
+
+#sign_up_button {
+  text-align: center;
+  margin-right: 6.2%;
 }

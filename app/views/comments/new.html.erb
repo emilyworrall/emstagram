@@ -1,5 +1,5 @@
 <%= form_for [@post, @comment] do |f| %>
-  <%= f.label :thoughts %>
-  <%= f.text_area :thoughts %>
-  <%= f.submit 'Leave comment' %>
+  <%= f.text_area :thoughts, :placeholder => "Add a comment.."%>
+  </br></br>
+  <%= f.submit "Post" %>
 <% end %>
