@@ -41,12 +41,17 @@ p, div {
   font-size: 23px;
 }
 
+#comment_user {
+  font-family: Permanent Marker;
+  font-size: 17px;
+}
+
 #timestamp {
   position: relative;
   margin-left: 52%;
 }
 #comments {
-  margin-left: -17%;
+  margin-left: -10%;
   text-align: left;
 }
 

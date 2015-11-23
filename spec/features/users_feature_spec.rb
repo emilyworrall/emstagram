@@ -12,7 +12,8 @@ feature 'Users' do
   end
 
   context 'signed in and on the homepage' do
-    let!(:user){User.create(email: 'emily@example.com',
+    let!(:user){User.create(username: 'example1',
+                            email: 'emily@example.com',
                             password: 'Pa55w0rd')}
 
     before do

@@ -3,7 +3,8 @@ require 'rails_helper'
 feature 'Posts' do
   include Helpers
 
-  let!(:user){User.create(email: 'emily@example.com',
+  let!(:user){User.create(username: 'example1',
+                          email: 'emily@example.com',
                           password: 'Pa55w0rd')}
 
   before do
