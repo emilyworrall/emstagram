@@ -13,7 +13,7 @@ class Post < ActiveRecord::Base
         aws_access_key_id: ENV['AWS_ACCESS_KEY_ID'],
         aws_secret_access_key: ENV['AWS_SECRET_ACCESS_KEY']
     },
-    fog_directory: "emstagram1-env"
+    fog_directory: "emstagram-env"
 
 
   validates_attachment_content_type :image, :content_type => /\Aimage\/.*\Z/
