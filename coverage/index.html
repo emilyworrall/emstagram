@@ -14,7 +14,7 @@
       <img src="./assets/0.8.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2015-11-26T14:12:20+00:00">2015-11-26T14:12:20+00:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2015-11-26T19:08:41+00:00">2015-11-26T19:08:41+00:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -113,7 +113,7 @@
       <tr>
         <td class="strong"><a href="#be06171c19356807dfbe283cf40734644a1a69ff" class="src_link" title="app/models/post.rb">app/models/post.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>10</td>
+        <td>16</td>
         <td>6</td>
         <td>6</td>
         <td>0</td>
@@ -885,22 +885,58 @@
         <li class="never" data-hits="" data-linenumber="7">
           
           
-          <code class="ruby">    :default_url =&gt; &quot;/images/:style/missing.png&quot;</code>
+          <code class="ruby">                    :default_url =&gt; &quot;/images/:style/missing.png&quot;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="8">
           
           
+          <code class="ruby">                    # :storage        =&gt; :s3,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby">                    # :s3_credentials =&gt; {:bucket =&gt; ENV[&#39;BUCKET_NAME&#39;],</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby">                    #                     :access_key_id =&gt; ENV[&#39;S3_KEY&#39;],</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby">                    #                     :secret_access_key =&gt; ENV[&#39;S3_SECRET&#39;]},</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby">                    # :s3_protocol    =&gt; &quot;https&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby">                    # :s3_host_name   =&gt; &quot;s3-eu-west-1.amazonaws.com&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="9">
+        <li class="covered" data-hits="1" data-linenumber="15">
           <span class="hits">1</span>
           
           <code class="ruby">  validates_attachment_content_type :image, :content_type =&gt; /\Aimage\/.*\Z/</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="10">
+        <li class="never" data-hits="" data-linenumber="16">
           
           
           <code class="ruby">end</code>
