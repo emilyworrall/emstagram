@@ -29,6 +29,7 @@ gem 'database_cleaner'
 gem 'selenium-webdriver'
 gem 'poltergeist'
 gem 'time_difference'
+gem 'aws-s3'
 gem 'aws-sdk'
 gem 'coveralls', require: false
 gem 'figaro'
