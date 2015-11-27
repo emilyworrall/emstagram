@@ -1,5 +1,3 @@
-[![Coverage Status](https://coveralls.io/repos/emilyworrall/emstagram/badge.svg?branch=master&service=github)](https://coveralls.io/github/emilyworrall/emstagram?branch=master)
-
 #Emstagram
 
 An Instagram clone built in week 7 of Makers Academy. Built with Rails,
