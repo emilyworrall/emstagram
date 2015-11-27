@@ -18,4 +18,5 @@ feature 'liking posts' do
     click_link('likes-link')
     expect(page).to have_content('1 like')
   end
+
 end

@@ -23,6 +23,7 @@ feature 'Posts' do
     scenario 'should allow user to add a post' do
       visit '/'
       click_link 'Post a photo'
+      attach_file 'post[image]', 'spec/fixtures/images/example.png'
       fill_in 'Add a caption', with: 'cool'
       click_button 'Post'
       expect(page).to have_content('cool')
@@ -64,12 +65,15 @@ feature 'Posts' do
     end
   end
 
-  # context 'deleting posts' do
-  #   scenario 'removes a post when a user clicks delete post' do
-  #     add_post
-  #     click_link 'Delete post'
-  #     expect(page).not_to have_content('#testing')
-  #     expect(page).to have_content('Post deleted successfully')
-  #   end
-  # end
+  context 'deleting posts' do
+    scenario 'removes a post when a user clicks delete post' do
+      click_link 'Post a photo'
+      attach_file 'post[image]', 'spec/fixtures/images/example.png'
+      fill_in 'Add a caption', with: 'cool'
+      click_button 'Post'
+      click_link 'Delete post'
+      expect(page).not_to have_content('cool')
+      expect(page).to have_content('Post deleted successfully')
+    end
+  end
 end
