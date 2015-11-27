@@ -1,4 +1,4 @@
-# Emstagram
+#Emstagram
 
 An Instagram clone built in week 7 of Makers Academy. Built with Rails,
 Postgresql database, RSpec and Capybara.
