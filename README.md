@@ -1,5 +1,7 @@
 #Emstagram
 
+View the live version at: https://emstagram1.herokuapp.com/
+
 An Instagram clone built in week 7 of Makers Academy. Built with Rails,
 Postgresql database, RSpec and Capybara.
 
