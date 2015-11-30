@@ -15,10 +15,15 @@
           </br></br>
           <span id="description"><%= post.description %></span>
           </br></br>
-          <%= link_to post_likes_path(post), class:"link", id:"likes-link" do %>
+          <% if current_user %>
+            <%= link_to post_likes_path(post), class:"link", id:"likes-link" do %>
+              <span class="glyphicon glyphicon-heart"></span>
+            <% end %>
+            <span class="likes_count"> <%= post.likes.count %> </span> <%= 'like'.pluralize post.likes.count %>
+          <% else %>
             <span class="glyphicon glyphicon-heart"></span>
+            <span class="likes_count"> <%= post.likes.count %> </span> <%= 'like'.pluralize post.likes.count %>
           <% end %>
-          <span class="likes_count"> <%= post.likes.count %> </span> <%= 'like'.pluralize post.likes.count %>
           </br></br>
           <% if current_user %>
             <% if (post.user_id == current_user.id) %>

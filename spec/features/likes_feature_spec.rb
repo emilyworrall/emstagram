@@ -19,4 +19,10 @@ feature 'liking posts' do
     expect(page).to have_content('1 like')
   end
 
+  scenario 'a user cannot like a post unless signed in' do
+    visit '/posts'
+    click_link('Sign Out')
+    expect(page).not_to have_link 'likes-link', href: post_likes_path(post)
+  end
+
 end
